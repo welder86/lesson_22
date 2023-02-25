@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_22</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">Вчимо JS <span>(ну намагаємось)</span></h1>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <section class="section-first">
+                    <h2 class="section-first__title">
+                        <a href="https://www.youtube.com/watch?v=uOeFpp872MY" target="_blank">Домашка до другого
+                            відео</a>
+                    </h2>
+                    <ul class="section-first__list list">
+                        <li class="list__item">
+                            <h3>Варінт перший</h3>
+                            <p>Цей варіант не викличе помилку, но краще поставити крапку з комою (;) в
+                                кінці. <br> Правильний варіант</p>
+                            <p>console.log('Вчимо JS');</p>
+                        </li>
+                        <li class="list__item">
+                            <h3>Варінт другий</h3>
+                            <p>Варіант другий не викличе помилку, але краще поставити крапку з комою (;) в
+                                кінці. <br> Правильний варіант</p>
+                            <p>console.log('JS');</p>
+                            <p>console.log('Вчимо');</p>
+                        </li>
+                        <li class="list__item">
+                            <h3>Варінт третій</h3>
+                            <p>Варіант третій буде помилка, слід писати з нового рядка і в кінці поставити
+                                крапку з комою (;). <br> Правильний варіант</p>
+                            <p>console.log('JS');</p>
+                            <p>console.log('Вчимо');</p>
+                        </li>
+                        <li class="list__item">
+                            <h3>Варінт четвертий</h3>
+                            <p>Варінт 4  викличе помилку через не закриті лапки в першому рядку. <br> Правильни варіант
+                            </p>
+                            <p>console.log('Вчимо');</p>
+                            <p>console.log('JS');</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section-second">
+                    <h2 class="section-second__title">
+                        <a href="https://www.youtube.com/watch?v=5V8IeATHr4w" target="_blank">Домашка до третього
+                            відео</a>
+                    </h2>
+                    <div class="section-second__exercises">
+                        <div class="first-exercise">
+                            <h3>Задача один</h3>
+                            <p>Придумати ім'я змінної для зберігання кольору очей користувача сайту</p>
+                            <p>Рішення : <br>
+                                let userEyeColor = `green`;
+                            </p>
+                        </div>
+                        <div class="second-exercise">
+                            <h3>Задача №2</h3>
+                            <p>Об'явити дві змінні user i userName. Присвоїти значення "Вася" змінній user. Скопіювати
+                                значення змінної userName в змінну user.</p>
+                            <p>
+                                Рішення : <br>
+                                let userName = `Слава`; <br>
+                                let user;<br>
+                                user = userName;<br>
+                                console.log(user);
+                            </p>
+                        </div>
+                        <div class="third-exercise">
+                            <h3>Задача №3</h3>
+                            <ul class="third-exercise__list list">
+                                <li class="list__item">
+                                    <h3>Варінт перший</h3>
+                                    <p>Варіант №1 буде помилка через неправильний запис. Правильни варіант</p>
+                                    <p>let user = `Слава`;</p>
+                                    <p>let age = 36;</p>
+                                </li>
+                                <li class="list__item">
+                                    <h3>Варінт другий</h3>
+                                    <p>Варіант два неправильний через невірний запис імені змінної. Правильни варіант</p>
+                                    <p>let myAge = 36;</p>
+                                </li>
+                                <li class="list__item">
+                                    <h3>Варінт три</h3>
+                                    <p>Варіант №3 неправильний тому , що ім'я BLOCK_SIZE мало б задаватись для значення
+                                        яке нам відомо заздалегідь</p>
+                                </li>
+                                <li class="list__item">
+                                    <h3>Варінт чотири</h3>
+                                    <p>Варіант №4 правильний.</p>
+                                </li>
+                                <li class="list__item">
+                                    <h3>Варінт пятий</h3>
+                                    <p>Варіант №5 правильний через відмінності області видимості між var і let.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-third">
+                    <h2 class="section-third__title">
+                        <a href="https://www.youtube.com/watch?v=g7jDucodUzQ" target="_blank">Домашка до четвертого
+                            відео</a>
+                    </h2>
+                    <ul class="section-third__list list">
+                        <li class="list__item">
+                            <h3>Варінт перший</h3>
+                            <p>Перший варіант неправильний використання подвійних лапок , а не зворотніх .Правильний
+                    </p>
+                            <p>let userAge = 36;</p>
+                            <p>let userInfo = `Фрілансер ${userAge}`;</p>
+                        </li>
+                        <li class="list__item">
+                            <h3>Варінт другий</h3>
+                            <p>Другий варіант неправильний,  повернеться значення infinity</p>
+                        </li>
+                        <li class="list__item">
+                            <h3>Варінт три</h3>
+                            <p>Варіант третій неправильний ,бо повернеться значення undefined</p>
+                        </li>
+                        <li class="list__item">
+                            <h3>Варінт чотири</h3>
+                            <p>Варінт чотири правильний.</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
